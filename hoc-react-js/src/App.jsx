@@ -1,27 +1,26 @@
 import "./App.css";
-import Header from "./Header";
-import logo from "./logo.svg";
 
 function App() {
   return (
-    <>
-      <Header />
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="title">Unicode Academy</h1>
-          <p>Chào mừng bạn đến với khoá học ReactJS</p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    </>
+    <div className="block">
+      <h2 className="sub-title" id="sub-title">
+        Khoá học ReactJS
+      </h2>
+      <h1 className="title" id="title">
+        Unicode Academy
+      </h1>
+      <p className="text">
+        <a
+          href="https://unicode.vn"
+          className="text--link"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Đăng ký khoá học"
+        >
+          Đăng ký ngay
+        </a>
+      </p>
+    </div>
   );
 }
 

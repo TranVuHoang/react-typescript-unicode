@@ -78,6 +78,7 @@ duyệt như: HTML, image,...
 sẽ code nội dung, thao tác phần lớn ở những file này, gồm
 các file JS, CSS,...
 ```
+
 ```
 CÁCH REACT RENDER HTML LÊN TRÌNH DUYỆT
 
@@ -85,3 +86,18 @@ CÁCH REACT RENDER HTML LÊN TRÌNH DUYỆT
 - public/index.html
 - src/App.jsx
 - src/index.js
+```
+
+## 04. JSX
+
+```
+JSX (Javascript XML), là cấu trúc XML được viết bên trong cấu trúc JS
+(HTML cũng được viết theo cấu trúc XML nhé) do đó có thể hiểu đơn giản hơn
+JSX giống như viết HTML bên trong cấu trúc JS
+
+Vậy tại sao cần JSX?
+  -> Để render thẻ <h1> ta thấy rõ ràng cách viết JSX ngắn gọn hơn, và
+  nó gần giống như cấu trúc HTML quen thuộc
+  -> Đây chỉ mới có 1 thẻ <h1>, nếu nội dung là 11 file HTML hoàn chỉnh thì cấu
+  trúc bên trái sẽ rất phức tạp.
+```
