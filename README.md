@@ -32,3 +32,27 @@
 - Package Manager: npm, yarn
 - Module Bundlẻ: vite, webpack, rollup,...
 ```
+
+## 02. Tổng quan và hướng dẫn cài ReactJS
+
+```
+REACTJS LÀ GÌ?
+
+- React là thư viện của Javascript để xây dựng giao diện người dùng,
+được phát triển ban đầu từ Facebook và đóng góp bởi cộng đồng lập trình viên trên TG.
+- React có thể sử dụng để viết phần nền cho single-page hoặc ứng dụng di động,
+giúp trang lấy và xử lý dữ liệu được tối ưu hơn các phương pháp khác.
+- React thích hợp với các ứng dụng lớn, khả năng mở rộng ở tương lai.
+- Điểm mạnh dễ thấy nhất có lẽ là phần Component:
+  - React chia nhỏ các phần của trang thành từng phần riêng biệt để xử lý,
+  gọi là component, giúp dễ quản lý, dễ sử dụng ở nhiều nơi.
+  - Mỗi khi dữ liệu được cập nhật mới, thay vì thay đổi cả trang,
+  thì React sẽ giúp thay đổi chỉ component liên quan, việc này
+  sẽ tối ưu rất nhiều thời gian làm việc với dữ liệu.
+  - Đặc biệt là hầu hết các component thường dùng đã được phát triển và
+  chia sẻ, chỉ cần cài đặt và sử dụng.
+
+- Điểm "không mạnh" của React có lẽ là ... khó học đối với một số bạn mới
+tiếp xúc lần đầu, hoặc với những bạn đã quen với cách viết thư viện khác như Jquery.
+
+```
