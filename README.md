@@ -56,3 +56,32 @@ giúp trang lấy và xử lý dữ liệu được tối ưu hơn các phương
 tiếp xúc lần đầu, hoặc với những bạn đã quen với cách viết thư viện khác như Jquery.
 
 ```
+
+## 03. React render HTML
+
+```
+- Render là quá trình hiển thị nội dung lên trình duyệtteyud cho người dùng nhìn
+thấy
+- Với React thì nội dung layout bạn viết không phải nằm ở trang HTML, mà được
+viết bên trong file JS, file HTML chỉ là cầu nối giúp nội dung JS "liên kết" với
+trình duyệt.
+
+```
+
+```
+CẤU TRÚC THƯ MỤC PROJECT REACT
+
+- node_modules: chứa nội dung cài đặt, tất cả cài đặt sẽ được lưu ở đây(thư viện)
+- public: chứa tất cả file output, là các file sẽ tương tác trực tiếp với trình
+duyệt như: HTML, image,...
+- src: chứa tất cả các file input, đây là các file mà chúng ta
+sẽ code nội dung, thao tác phần lớn ở những file này, gồm
+các file JS, CSS,...
+```
+```
+CÁCH REACT RENDER HTML LÊN TRÌNH DUYỆT
+
+Để hiểu rõ hơn về render trong React, ta xem xét nội dung 3 file:
+- public/index.html
+- src/App.jsx
+- src/index.js
