@@ -1,60 +1,61 @@
 import "./App.css";
 
 function App() {
-  const firstProvince = 1;
+  /**
+   * 1. Render có điều kiện
+   * - Dùng lệnh if thông thường
+   * - Dùng toán tử 3 ngồi
+   *
+   * 2. Render với vòng lặp (map)
+   */
+  const getProduct = (product) => {};
+  const products = [
+    {
+      id: 1,
+      name: "Sản phẩm 1",
+      price: 12000,
+      description: "Mô tả sản phẩm 1",
+      status: 1,
+    },
+    {
+      id: 2,
+      name: "Sản phẩm 2",
+      price: 13000,
+      description: "Mô tả sản phẩm 2",
+      status: 0,
+    },
+    {
+      id: 3,
+      name: "Sản phẩm 3",
+      price: 11000,
+      description: "Mô tả sản phẩm 3",
+      status: 0,
+    },
+    {
+      id: 4,
+      name: "Sản phẩm 4",
+      price: 16000,
+      description: "Mô tả sản phẩm 4",
+      status: 1,
+    },
+  ];
 
-  const myAlert = () => {
-    alert("Xin chào!");
-  };
-
-  const message = "Welcome my course.";
+  const productList = products.map((product, index) => {
+    return (
+      <div key={index}>
+        <p>ID: {product.id}</p>
+        <p>Tên: {product.name}</p>
+        <p>Giá: {product.price}</p>
+        <p>Mô tả: {product.description}</p>
+        <hr />
+      </div>
+    );
+  });
 
   return (
     <>
-      <div className="block">
-        <h2 className="sub-title" id="sub-title">
-          Khoá học ReactJS
-        </h2>
-        <h1 className="title" id="title">
-          Unicode Academy
-        </h1>
-        <p className="text">
-          <a
-            href="https://unicode.vn"
-            className="text--link"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Đăng ký khoá học"
-          >
-            Đăng ký ngay
-          </a>
-        </p>
-      </div>
-      <div
-        className="element"
-        style={{ color: "red", fontWeight: "bold" }}
-        onClick={() => myAlert()}
-      >
-        <p>{message}</p>
-      </div>
-
-      <label htmlFor="username">Username </label>
-      <input
-        type="text"
-        id="username"
-        name="username"
-        defaultValue="hoangan.web"
-      />
-
-      <div className="">
-        <select name="" id="">
-          <option value="0">Chọn tỉnh / thành phố</option>
-          <option value={firstProvince}>Hà Nội</option>
-          <option value="2">Hồ Chí Minh</option>
-        </select>
-      </div>
-      <br />
-      <button onClick={myAlert}>Click me</button>
+      <h2>Danh sách sản phẩm</h2>
+      {productList}
     </>
   );
 }
