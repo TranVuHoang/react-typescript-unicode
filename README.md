@@ -101,3 +101,15 @@ Vậy tại sao cần JSX?
   -> Đây chỉ mới có 1 thẻ <h1>, nếu nội dung là 11 file HTML hoàn chỉnh thì cấu
   trúc bên trái sẽ rất phức tạp.
 ```
+
+## 05. Component
+
+```
+- React chia nhỏ các phần của trang thành các thành phần riêng biệt, gọi là
+component, ví dụ như các phần: header, sidebar, navigation, footer,...
+- Tính chất của component giống như một arrow function javascript, có thể
+tái sử dụng ở nhiều nơi khác nhau.
+
+Cách viết component trong React:
+- Viết dưới dạng function
+```
