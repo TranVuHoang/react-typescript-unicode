@@ -1,7 +1,9 @@
 const Member = ({ name, age, address, comment }) => {
   return (
     <div className="member-box">
-      <h2>Tên: {name}</h2>
+      <p>
+        <strong>Tên: {name}</strong>
+      </p>
       <p>Tuổi: {age}</p>
       <p>Địa chỉ: {address}</p>
       <p>Bình luận: {comment}</p>
