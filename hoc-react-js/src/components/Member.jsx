@@ -1,13 +1,10 @@
-import Avatar from "./Avatar";
-import Comment from "./Comment";
-import MemberInfo from "./MemberInfo";
-
-const Member = () => {
+const Member = ({ name, age, address, comment }) => {
   return (
     <div className="member-box">
-      <Avatar />
-      <MemberInfo />
-      <Comment />
+      <h2>Tên: {name}</h2>
+      <p>Tuổi: {age}</p>
+      <p>Địa chỉ: {address}</p>
+      <p>Bình luận: {comment}</p>
     </div>
   );
 };

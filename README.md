@@ -113,3 +113,11 @@ tái sử dụng ở nhiều nơi khác nhau.
 Cách viết component trong React:
 - Viết dưới dạng function
 ```
+
+## 06. Props
+
+```
+Component thực chất là 1 arrow function hoặc class, phương thức truyền giá trị
+giữa các function này được gọi là props, chúng được React xử lý và trả về kết quả
+hiển thị trên trình duyệt.
+```

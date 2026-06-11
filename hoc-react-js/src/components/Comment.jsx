@@ -1,10 +1,7 @@
-const Comment = () => {
+const Comment = ({ content }) => {
   return (
     <div className="comment">
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus,
-        ipsum.
-      </p>
+      <p>{content}</p>
     </div>
   );
 };
