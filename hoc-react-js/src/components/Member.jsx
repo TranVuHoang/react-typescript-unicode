@@ -1,4 +1,8 @@
-const Member = ({ name, age, address, comment }) => {
+import Posts from "./Posts";
+
+const Member = (props) => {
+  const { name, age, address, comment, posts = [] } = props;
+
   return (
     <div className="member-box">
       <p>
@@ -7,6 +11,7 @@ const Member = ({ name, age, address, comment }) => {
       <p>Tuổi: {age}</p>
       <p>Địa chỉ: {address}</p>
       <p>Bình luận: {comment}</p>
+      <Posts posts={posts} />
     </div>
   );
 };

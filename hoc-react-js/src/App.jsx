@@ -21,18 +21,60 @@ const App = () => {
       age: 29,
       shippingAddress: "Hà Nội",
       comment: "Tôi là lập trình viên",
+      posts: [
+        {
+          title: "Post 01",
+          content: "Conent01",
+        },
+        {
+          title: "Post 02",
+          content: "Conent02",
+        },
+        {
+          title: "Post 03",
+          content: "Conent03",
+        },
+      ],
     },
     {
       id: 2,
       name: "Trang Trang",
       age: 23,
       shippingAddress: "Hưng Yên",
+      posts: [
+        {
+          title: "Post 01",
+          content: "Conent01",
+        },
+        {
+          title: "Post 02",
+          content: "Conent02",
+        },
+        {
+          title: "Post 03",
+          content: "Conent03",
+        },
+      ],
     },
     {
       id: 3,
       name: "Trinh ",
       age: 29,
       shippingAddress: "Hồ Chí Minh",
+      posts: [
+        {
+          title: "Post 01",
+          content: "Conent01",
+        },
+        {
+          title: "Post 02",
+          content: "Conent02",
+        },
+        {
+          title: "Post 03",
+          content: "Conent03",
+        },
+      ],
     },
   ];
 
@@ -44,6 +86,7 @@ const App = () => {
         age={member.age}
         address={member.shippingAddress}
         comment={member.comment}
+        posts={member.posts}
       />
     );
   });
